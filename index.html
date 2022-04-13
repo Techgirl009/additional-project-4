@@ -1,0 +1,33 @@
+<!DOCTYPE html><html lang="en"><head>
+    <script src="p5.js"></script>
+    <script src="p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+
+  </head>
+  <body>
+    <h1>Stop other music when played new song</h1>
+    <p><b>Description : </b> Stop other music files from playing when you switch to play another song
+    </p><ol>
+      <li>Inside each if block, before playing another song stop the other two songs from playing
+        <ol>
+          <li>if "name" variable is equal to "peter_pan" then write code to stop songs loaded in "frozen" and "disney" varaibles from playing</li>
+          <li>if "name" variable is equal to "frozen" then write code to stop songs loaded in "peter_pan" and "disney" varaibles from playing</li>
+           <li>if "name" variable is equal to "disney" then write code to stop songs loaded in "peter_pan" and "frozen" varaibles from playing</li>
+        </ol>
+      </li>
+      <li>Write the above code inside play() function in sketch.js</li>
+    </ol>
+    <p></p>
+  
+  <select id="name">
+      <option value="peter_pan">Peter Pan</option>
+      <option value="frozen">Let it go</option>
+      <option value="disney">Disney Music</option>
+    </select>
+   <button onclick="play();">Play Music</button>
+  <button onclick="stop_music();">Stop Music</button>
+    <script src="sketch.js"></script>
+  
+
+</body></html>
